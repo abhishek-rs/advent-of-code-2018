@@ -2,6 +2,7 @@
 
 //To inject Ramda, go to Chrome Dev Tools -> Sources -> Watch tab - insert below code
 /* 
+
 (function () {
  if (typeof window.R === 'undefined') {
     var s = document.createElement('script');
@@ -9,10 +10,10 @@
     document.body.appendChild(s);
   }
  }());
+
 */
 
-//Get input 
-const array = document.getElementsByTagName("pre")[0].innerText.split("\n");
+const array = document.getElementsByTagName("pre")[0].innerText.split("\n").pop();
 const containsTuples = R.contains(2, R.__);
 const containsTriples = R.contains(3, R.__);
 const countTrues = R.pipe(
