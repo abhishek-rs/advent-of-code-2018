@@ -36,7 +36,7 @@ const answer = R.pipe(
     indexedReduce(
         (acc, curr, i, arr) => {
             R.map((x) => { 
-                if(isOneCharDiff3(x, curr)) {
+                if(isOneCharDiff(x, curr)) {
                     acc.push(x, curr); 
                 }
                 
