@@ -51,4 +51,4 @@ const answer = R.pipe(
     ),
 	R.converge(R.intersection, [R.head, R.last]),
 	R.join('')
-)(array);
+)(input);
